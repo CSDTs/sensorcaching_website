@@ -86,9 +86,9 @@ letter-spacing: -2px; text-shadow: 0px 1px 0px #FFF; }
 
 /* Breadcrumb */
 
-.breadcrumb { padding:0; }
+.breadcrumb { padding:0; display: none; }
 
-#breadcrumb { overflow: hidden; zoom: 1; margin: 0 0 1.5em !important; padding: 5px 5px 5px 10px;
+#breadcrumb { display: none; overflow: hidden; zoom: 1; margin: 0 0 1.5em !important; padding: 5px 5px 5px 10px;
 font-size: 0.92em; color: #999 !important; background-color: #f1f1f1;
 -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; border: 1px solid #e9e9e9;
 text-shadow: 1px 1px 0px #fff; }
@@ -184,16 +184,18 @@ ul.links.inline li.last { border:none; }
 
 .block ul.menu li { list-style:none; }
 
-.block ul.menu li a { display: block; border-bottom: 1px solid #eee; padding: 8px 0px 8px 24px; line-height: 120%; font-weight: bold;
+.region-header .block ul.menu li a { display: block; border-bottom: 1px solid #eee; padding: 8px 0px 8px 24px; line-height: 120%; font-weight: bold;
 background: url(../images/light/arrow_bullet.png) no-repeat 10px; text-decoration: none; }
 
-.block ul.menu li a:hover { color:#333333; background: url(../images/dark/arrow_bullet.png) no-repeat 10px; }
+.region-header .block ul.menu li a:hover { color:#333333; background: url(../images/dark/arrow_bullet.png) no-repeat 10px; }
 
-.block ul.menu ul { margin:0 0 0 1.3em; }
+.region-header .block ul.menu ul { margin:0 0 0 1.3em; }
 
-.block ul.menu ul li a { border:none; padding: 4px 0; font-size:13px; color:#666666; background:none; }
+.region-header .block ul.menu ul li a { border:none; padding: 4px 0; font-size:13px; color:#666666; background:none; }
 
-.block ul.menu ul li a:hover { color:#333333; background:none; }
+.region-header .block ul.menu ul li a:hover { color:#333333; background:none; }
+
+#navigation ul li.last, #navigation ul.sf-menu li.last { border-right: none !important; }
 
 /* Comments */
 
@@ -457,7 +459,7 @@ display: block; font-weight: bold; text-shadow: 1px 1px 0px #fff; outline:none; 
 
 #navigation ul li:hover li a, #navigation ul.sf-menu li li a { color: #595959; font-weight: normal; }
 
-#navigation ul li a.active, #navigation ul.sf-menu li a.active { color: #333333; background-color: #ffffff; text-shadow: 1px 1px 0px #ffffff; }
+#navigation ul li a.active, #navigation ul.sf-menu li a.active { color: #333333; /*background-color: #ffffff;*/ text-shadow: 1px 1px 0px #ffffff; }
 
 #navigation ul ul { position: absolute; top: -999em; width: 230px; }
 
@@ -550,5 +552,13 @@ select.mnav { width:100%; padding:5px;}
 }
 
 /* ============================================
-	        Additional Style for Modules */
+	        Additional Style for Footer */
+span.ext {
+    background: url("../images/extlink.png") no-repeat scroll right center transparent;
+    padding-right: 12px;
+}
 
+.region-footer .block ul.menu li{
+    float: left;
+    display: block;
+}

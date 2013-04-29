@@ -1,7 +1,7 @@
 
-name = Skeleton
-description = Skeleton is a powerful, clean, responsive theme ported to Drupal by <a href="http://www.morethanthemes.com/" target="_blank">More Than (just) Themes</a>. If you like this theme, we encourage you to try also our other <a href="http://www.morethanthemes.com" target="_blank">Premium</a> and <a href="http://drupalizing.com" target="_blank">Free</a> Drupal themes.
-version = VERSION
+name = Sensorcaching
+description = Made for Sensorcaching Project
+version = 7.x-1.0
 core = 7.x
 
 
@@ -30,11 +30,3 @@ regions[footer] = Footer
 regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
-
-
-; Information added by drupal.org packaging script on 2013-02-17
-version = "7.x-1.2"
-core = "7.x"
-project = "skeletontheme"
-datestamp = "1361062289"
-

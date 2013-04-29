@@ -161,7 +161,7 @@
             <?php if (!empty($site_name)):?>
             <?php print $site_name;?> - Open Source Project<br/>
             <?php endif;?>
-            Website Design and Development by <a href="http://danielatwork.com" target="_blank">Daniel Zhao</a></div>
+            Website supported by <a href="http://danielatwork.com" target="_blank">Daniel Zhao</a><span class="ext"></span></div>
         
         </div>
     </div>

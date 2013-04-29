@@ -1,0 +1,10 @@
+name = "Sensorcache Views"
+description = "Exposes Sensorcache Data Tables to Views."
+dependencies[] = views
+package = "Sensorcache Views"
+core = 7.x
+version = "7.x-1.0-dev"
+project = "sensorcache_views"
+
+files[] = sensorcache_views.module
+files[] = sensorcache_views.views.inc
